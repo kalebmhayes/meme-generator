@@ -7,8 +7,10 @@ import Meme from './Components/Meme.jsx'
 function App() {
   return (
     <div>
+    <div className='app'>
       <Header />
       <Meme />
+    </div>
     </div>
 
   );

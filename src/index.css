@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box;
 }
+body {
+}
+.app {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 1em;
+  border-radius: 10px;
+  background: rgb(219, 219, 219);
+  /* box-shadow: 10px 10px 5px rgba(73, 73, 73, 0.4),
+    -10px -10px 5px rgba(73, 73, 73, 0.4); */
+}
 
 .header-div {
   display: flex;
@@ -8,6 +21,7 @@
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   padding-left: 1em;
   padding-right: 1em;
+  border-radius: 10px 10px 0 0;
 }
 
 .header-img {
