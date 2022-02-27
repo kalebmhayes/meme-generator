@@ -7,6 +7,14 @@ export default function Meme() {
         topText: ' ',
         bottomText:' '
     })
+
+    const [allMemes , setAllMemes]=React.useState([])
+
+    React.useEffect(()=>{
+        fetch('https://api.imgflip.com/get_memes')
+        .then(res => res.json())
+        .then(data => setAllMemes(data.data.memes))
+    } , [])
     
     function getMemeImage() {
         const memesArray = memesData.data.memes
@@ -22,6 +30,8 @@ export default function Meme() {
     
         
     }
+
+
     
     function handleChange(event){
         console.log(event.target.value)
